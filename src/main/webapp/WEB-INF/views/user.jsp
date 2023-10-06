@@ -1,9 +1,8 @@
 <%@ page import="shop.mtcoding.web4.model.User" %>
-<%@ page import="shop.mtcoding.web4.model.FakeDAO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    User u1 = new FakeDAO().userData();
+    User u1 = (User) request.getAttribute("u1");
 %>
 <html>
 <head>

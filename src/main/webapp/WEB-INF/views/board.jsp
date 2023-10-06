@@ -1,9 +1,8 @@
 <%@ page import="shop.mtcoding.web4.model.Board" %>
-<%@ page import="shop.mtcoding.web4.model.FakeDAO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    Board b1 = new FakeDAO().boardData();
+    Board b1 = (Board) request.getAttribute("b1");
 %>
 <html>
 <head>
